@@ -553,3 +553,67 @@ function displayCategories(cats) {
   }, 200);
   contentDiv.innerHTML = box;
 }
+
+$(document).ready(function () {
+  var lastScrollTop = 0;
+
+  $(window).scroll(function () {
+    var st = $(this).scrollTop();
+    if (st > lastScrollTop) {
+      // إذا كانت الحركة هي لأسفل
+      $(".custom-slider").removeClass("scroll-up").addClass("scroll-down");
+    } else {
+      // إذا كانت الحركة هي لأعلى
+      $(".custom-slider").removeClass("scroll-down").addClass("scroll-up");
+    }
+    lastScrollTop = st;
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  window.addEventListener("scroll", handleScroll);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  window.addEventListener("scroll", handleScroll);
+});
+
+function handleScroll() {
+  var scrollY = window.scrollY;
+
+  // Adjust the colors based on your preference
+  var handleColor = scrollY > 0 ? "#000" : "#000"; // Change colors as needed
+  var handleHoverColor = scrollY > 0 ? "#ffee00" : "#ffee00"; // Change colors as needed
+  var trackColor = scrollY > 0 ? "#ffee00" : "#000"; // Change colors as needed
+
+  document.documentElement.style.setProperty("--scrollbar-handle-color", handleColor);
+  document.documentElement.style.setProperty("--scrollbar-handle-hover-color", handleHoverColor);
+  document.documentElement.style.setProperty("--scrollbar-track-color", trackColor);
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  const cursor = document.createElement('div');
+  cursor.className = 'custom-cursor';
+  document.body.appendChild(cursor);
+
+  document.addEventListener('mousemove', function (e) {
+      cursor.style.left = e.pageX + 'px';
+      cursor.style.top = e.pageY + 'px';
+  });
+
+  document.addEventListener('mousedown', function () {
+      cursor.classList.add('clicked'); // يضيف كلاس عند الضغط
+  });
+
+  document.addEventListener('mouseup', function () {
+      cursor.classList.remove('clicked'); // يزيل الكلاس عند الإفراج
+  });
+});
+
+document.addEventListener('mousedown', function () {
+  document.body.style.cursor = 'none'; // يخفي المؤشر عند الضغط
+});
+
+document.addEventListener('mouseup', function () {
+  document.body.style.cursor = 'auto'; // يستعيد المؤشر بعد الإفراج
+});
