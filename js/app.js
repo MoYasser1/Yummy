@@ -143,8 +143,7 @@ function capitalizeFirstLetter(str) {
 
 // Initial actions
 getDefaultMeals();
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////!@@*
-
+//////////////////////////////////////////////////MOHAMED YASSER !!////////////////////////////////////////////////////////////////!@@*
 
 async function getMealsBySearch(url, inp, searchValue) {
   let nameSearchInp = document.querySelector(".form .searchNameInp");
@@ -263,7 +262,8 @@ function displaySingleMeal(meal) {
       if (value && value !== " ") {
         recipe.push(value);
       }
-    }
+    }//////////////////////////////////////////////////MOHAMED YASSER !!////////////////////////////////////////////////////////////////!@@*
+
   }
   console.log(recipe);
 
@@ -323,6 +323,7 @@ function displaySingleMeal(meal) {
       
       `;
 }
+//////////////////////////////////////////////////MOHAMED YASSER !!////////////////////////////////////////////////////////////////!@@*
 
 function dispalyContact() {
   loading.classList.remove("active");
@@ -378,6 +379,8 @@ function dispalyContact() {
       input.nextElementSibling.classList.add("active");
     }
   }
+  //////////////////////////////////////////////////MOHAMED YASSER !!////////////////////////////////////////////////////////////////!@@*
+
 
   inps.map((inp) => {
     inp.addEventListener("input", (e) => {
@@ -465,6 +468,7 @@ function dispalyContact() {
     });
   });
 }
+//////////////////////////////////////////////////MOHAMED YASSER !!////////////////////////////////////////////////////////////////!@@*
 
 function displayIngredients(ingreds) {
   loading.classList.add("active");
@@ -533,6 +537,8 @@ function displayCategories(cats) {
         </div>
           `;
   });
+  //////////////////////////////////////////////////MOHAMED YASSER !!////////////////////////////////////////////////////////////////!@@*
+
   setTimeout(() => {
     loading.classList.remove("active");
   }, 200);
