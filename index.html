@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <script
+      src="https://kit.fontawesome.com/21da3bc2eb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <aside>
+      <!-- links -->
+      <div class="links">
+        <ul>
+          <li onclick="searchHandle()">Search</li>
+          <li onclick="getCategories()">Categories</li>
+          <li onclick="getAreas()">Area</li>
+          <li onclick="getIngredients()">Ingredients</li>
+          <li onclick="dispalyContact()">Contact Us</li>
+        </ul>
+      </div>
+      <div class="control">
+        <img src="./images/logo.png" alt="" class="icon" />
+        <i class="fa-solid fa-bars asideBtn"></i>
+      </div>
+    </aside>
+    <div class="container">
+      <div class="content">
+      </div>
+    </div>
+    <div class="loadingWrapper">
+      <div class="loading"></div>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
