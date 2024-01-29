@@ -274,6 +274,7 @@ aside .control .mode label:active:after {
   justify-content: space-around;
   flex-wrap: wrap;
   margin-bottom: 50px;
+  width: 100%;
 }
 .container .form .inp {
   width: 45%;

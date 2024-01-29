@@ -25,12 +25,21 @@ function searchHandle() {
       </div>
     </div>
   `;
+  
+  // Apply styles directly to the input elements
   const nameSearchInp = document.querySelector(".form .searchNameInp");
   const letterSearchInp = document.querySelector(".form .searchLetterInp");
+  nameSearchInp.style.width = "100%";
+  letterSearchInp.style.width = "100%";
+
+  // Add event listeners
   nameSearchInp.addEventListener("input", () => searchMeals(nameSearchInp.value, "name"));
   letterSearchInp.addEventListener("input", () => searchMeals(letterSearchInp.value, "letter"));
+
+  // Append content to container
   containerDiv.appendChild(contentDiv);
 }
+
 
 // Async functions
 async function getDefaultMeals() {
