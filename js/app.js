@@ -566,10 +566,10 @@ $(document).ready(function () {
       // إذا كانت الحركة هي لأعلى
       $(".custom-slider").removeClass("scroll-down").addClass("scroll-up");
     }
-    lastScrollTop = st;
+    lastScrollTop = st;يي
   });
 });
-رر
+dd
 
 document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", handleScroll);
